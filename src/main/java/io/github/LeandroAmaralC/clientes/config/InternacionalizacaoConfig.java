@@ -1,6 +1,5 @@
 package io.github.LeandroAmaralC.clientes.config;
 
-import jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
