@@ -24,8 +24,10 @@ public class ClienteController {
         this.repository = repository;
     }
 
-    @GetMapping("obterTodos")
+    @GetMapping("/obterTodos")
     public List<Cliente> ObterTodos(){
+        String nome;
+        nome = "";
         return repository.findAll();
     }
 
