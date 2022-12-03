@@ -13,19 +13,20 @@ import javax.validation.constraints.NotEmpty;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "clientes")
+@Table(name = "cliente")
 public class Cliente {
 
     @Id
+    @Column(name = "id_cliente")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     @Column(name = "nome_cliente", nullable = false, length = 150)
-    @NotEmpty(message = "{campo.nome.obrigatorio}")
+
     private String nome;
 
     @Column(name = "cpf_cliente", nullable = false, length = 11)
-    @NotEmpty(message = "{campo.cpf.invalido}")
+
     private String cpf;
 
 }
