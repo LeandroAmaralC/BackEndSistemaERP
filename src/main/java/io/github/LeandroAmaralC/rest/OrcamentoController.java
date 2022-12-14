@@ -22,7 +22,9 @@ public class OrcamentoController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Orcamento salvar(@RequestBody @Valid Orcamento orcamento) {return repository.save(orcamento);}
+    public Orcamento salvar(@RequestBody @Valid Orcamento orcamento) {
+
+        return repository.save(orcamento);}
 
 
 
