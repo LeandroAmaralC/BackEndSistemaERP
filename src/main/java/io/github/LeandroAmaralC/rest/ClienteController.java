@@ -62,4 +62,6 @@ public ClienteController(ClienteRepository repository) {this.repository = reposi
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
     }
 
+
+
 }
